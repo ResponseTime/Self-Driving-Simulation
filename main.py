@@ -27,12 +27,11 @@ def down(e):
 
 
 r = tk.Tk()
-r.geometry("800x800")
 r.title("Car MainLoop")
-canvas = tk.Canvas(r, width=800, height=800, bg="white")
+canvas = tk.Canvas(r, width=1000, height=1000, bg="white")
 canvas.pack(pady=20)
 image = ImageTk.PhotoImage(Image.open("./assets/car_top_view.png"))
-img = canvas.create_image(250, 120, anchor="nw", image=image)
+img = canvas.create_image(330, 650, anchor="nw", image=image)
 
 r.bind("<Left>", left)
 r.bind("<Right>", right)
